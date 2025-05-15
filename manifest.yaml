@@ -24,8 +24,8 @@ spec:
         zh_CN: 如果不填的话，图片可能会下载失败
       type: string  # 配置项类型，支持 string, integer, float, boolean 等
       default: ''  # 配置项默认值
-      required: false  # 配置项是否必填
+      required: true  # 配置项是否必填
 execution:
   python:
     path: main.py  # 插件主程序路径，必须与上方插件入口代码的文件名相同
-    attr: MyPlugin  # 插件类名，必须与上方代码中声明的类名相同
+    attr: NotePlugin  # 插件类名，必须与上方代码中声明的类名相同
